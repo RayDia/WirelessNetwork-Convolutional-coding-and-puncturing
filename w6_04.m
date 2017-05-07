@@ -6,6 +6,7 @@ ID = [8 1 9 9 0 1 4];
 
 scr_ini = ID - mean(ID);
 %scr = uint8([1 1 1 1 1 1 1]) ; % the scrambler seed
+scr_ini = scr_ini > 0;
 scr = scr_ini;
 
 % 7 a) 

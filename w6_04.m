@@ -67,7 +67,13 @@ msgF_Cnv_ch = char(msgF_Cnv + '0') ;
 length(msgF_Cnv_ch) / length(msgF_b)
 
 
-%Q9
+%Q9 puncture
+pattern = [1 1 0 1 1 0];
+len = length(pattern);
+msg_conv = msgF_Cnv_ch(find(pattern(1 + mod((0 : length(msgF_Cnv_ch) - 1), len)) == 1));
+
+format rat;
+length(msg_conv) / length(msgF_b)
 
 
 
